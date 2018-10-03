@@ -13,12 +13,12 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                bat "mkdir \deploy"
+                bat "mkdir \\deploy"
             }
         }
         stage('Deploy') {
             steps {
-                bat "xcopy . \deploy /s /y"
+                bat "xcopy . \\deploy /s /y"
             }
         }
     }
